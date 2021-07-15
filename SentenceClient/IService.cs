@@ -10,5 +10,10 @@ namespace SentenceClient
     public interface IService
     {
         Task<WordsSection> GetWordSectionAsync(WordTypes wordType);
+        bool PostSentence(string sentence);
+        WordList GetAllWordLists();
+        SentenceList GetAllSentences();
+        Task<List<Sentence>> GetSentenceList();
     }
+
 }

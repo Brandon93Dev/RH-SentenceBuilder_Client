@@ -20,14 +20,16 @@ namespace SentenceClient
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Content/Selectize/js/selectize.min.js"));
+                      "~/Scripts/bootstrap.js"
+                      ));
+            
+            bundles.Add(new ScriptBundle("~/bundles/main").Include(
+                "~/Scripts/Main.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
-                      "~/Content/Selectize/css/selectize.bootstrap3.css",
-                      "~/Content/Selectize/css/selectize.css"));
+                      "~/Content/Selectize/css/selectize.bootstrap3.css"));
         }
     }
 }

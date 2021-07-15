@@ -74,8 +74,8 @@ C:\Projects\RH-SentenceBuilder_Client\SentenceClient\bin\System.Web.WebPages.Raz
 C:\Projects\RH-SentenceBuilder_Client\SentenceClient\bin\Newtonsoft.Json.xml
 C:\Projects\RH-SentenceBuilder_Client\SentenceClient\bin\Antlr3.Runtime.pdb
 C:\Projects\RH-SentenceBuilder_Client\SentenceClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Projects\RH-SentenceBuilder_Client\SentenceClient\obj\Debug\SentenceClient.csproj.AssemblyReference.cache
 C:\Projects\RH-SentenceBuilder_Client\SentenceClient\obj\Debug\SentenceClient.csproj.CoreCompileInputs.cache
 C:\Projects\RH-SentenceBuilder_Client\SentenceClient\obj\Debug\SentenceClient.csproj.CopyComplete
 C:\Projects\RH-SentenceBuilder_Client\SentenceClient\obj\Debug\SentenceClient.dll
 C:\Projects\RH-SentenceBuilder_Client\SentenceClient\obj\Debug\SentenceClient.pdb
+C:\Projects\RH-SentenceBuilder_Client\SentenceClient\obj\Debug\SentenceClient.csproj.AssemblyReference.cache

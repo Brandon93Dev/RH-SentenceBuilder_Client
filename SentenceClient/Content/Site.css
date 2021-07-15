@@ -14,10 +14,16 @@ body,
     background-color: #1C2331;
 }
 
-/* Adding color to the Navbar on mobile */
-@media only screen and (max-width: 768px) {
-    .navbar {
-        background-color: #1C2331;
+
+@media (max-width:992px) {
+    .select-input {
+        margin: 0;
+    }
+}
+
+@media (min-width: 993px) {
+    .select-input {
+        margin-left: -20px
     }
 }
 
@@ -36,4 +42,19 @@ body,
 .main {
     background-color: #010a11 !important;
     display: grid !important;
+    height:100%
+}
+
+.btn-container {
+    position: relative;
+}
+
+.adding-button {
+    position: absolute;
+    bottom: 0;
+    right: 8px;
+}
+
+.sentence-buttons {
+    min-width: 100px;
 }

@@ -165,6 +165,8 @@
     </Compile>
     <Compile Include="Helpers\DataMapper.cs" />
     <Compile Include="IService.cs" />
+    <Compile Include="Models\IndexModel.cs" />
+    <Compile Include="Models\SentenceList.cs" />
     <Compile Include="Models\WordList.cs" />
     <Compile Include="Models\WordTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -180,15 +182,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\mdb.min.css" />
-    <Content Include="Content\Selectize\css\selectize.bootstrap2.css" />
-    <Content Include="Content\Selectize\css\selectize.bootstrap3.css" />
-    <Content Include="Content\Selectize\css\selectize.css" />
-    <Content Include="Content\Selectize\css\selectize.default.css" />
-    <Content Include="Content\Selectize\css\selectize.legacy.css" />
-    <Content Include="Content\Selectize\js\selectize.js" />
-    <Content Include="Content\Selectize\js\selectize.min.js" />
-    <Content Include="Content\Selectize\js\standalone\selectize.js" />
-    <Content Include="Content\Selectize\js\standalone\selectize.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -229,15 +222,6 @@
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.js.map" />
     <Content Include="Scripts\bootstrap.min.js.map" />
-    <Content Include="Content\Selectize\less\selectize.less" />
-    <Content Include="Content\Selectize\less\selectize.legacy.less" />
-    <Content Include="Content\Selectize\less\selectize.default.less" />
-    <Content Include="Content\Selectize\less\selectize.bootstrap3.less" />
-    <Content Include="Content\Selectize\less\selectize.bootstrap2.less" />
-    <Content Include="Content\Selectize\less\plugins\remove_button.less" />
-    <Content Include="Content\Selectize\less\plugins\optgroup_columns.less" />
-    <Content Include="Content\Selectize\less\plugins\dropdown_header.less" />
-    <Content Include="Content\Selectize\less\plugins\drag_drop.less" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
