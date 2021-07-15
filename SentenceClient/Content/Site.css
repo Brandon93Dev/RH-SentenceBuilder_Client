@@ -1,24 +1,39 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿/* Required height of parents of the Full Page Intro and Intro itself */
+html,
+body,
+.view {
+    height: 100%;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+/* Navbar animation */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.top-nav-collapse {
+    background-color: #1C2331;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #1C2331;
+    }
+}
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+    background-color: #1C2331;
+}
+
+/* From original index.html */
+@media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #1C2331 !important;
+    }
+}
+
+.main {
+    background-color: #010a11 !important;
+    display: grid !important;
 }

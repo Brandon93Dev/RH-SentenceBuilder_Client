@@ -1,0 +1,4 @@
+﻿$(function () {
+    $(".dynamic-select").selecize({
+    });
+});

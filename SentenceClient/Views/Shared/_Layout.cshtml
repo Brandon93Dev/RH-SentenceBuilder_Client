@@ -1,42 +1,82 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>MDB Full Page Image</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="../../Content/Selectize/css/selectize.bootstrap3.css"/>
+    <link rel="stylesheet" href="../../Content/Selectize/css/selectize.css"/>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="" target="_self">
+                <strong>Sentence Builder</strong>
+            </a>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left only here to push the right nav items to the right-->
+                <ul class="navbar-nav mr-auto">
                 </ul>
+
+                <!-- Right -->
+                <ul class="navbar-nav nav-flex-icons">
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/N3rv093" class="nav-link" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/Brandon93Dev" class="nav-link border border-light rounded"
+                           target="_blank">
+                            <i class="fab fa-github mr-2"></i>Brandon GitHub
+                        </a>
+                    </li>
+                </ul>
+
             </div>
+
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    @if (ViewBag.RenderIntro)
+    {
+<div style="background-image: url('https://i.ibb.co/nm4JYKy/Yumm.jpg'); background-repeat: no-repeat; background-size: cover; ">
+
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center" style="padding-top: 60px;">
+        <div class="text-center text-light mx-5 fadeIn">
+            <h1 class="mb-4">
+                <strong>Welcome to Sentence Builder</strong>
+            </h1>
+            <p class="mb-4 d-none d-md-block">
+                <strong>
+                    Start creating your sentence by using the fields below
+                </strong>
+            </p>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
 
+
+</div>}
+    <main class="main text-light">
+        <div class="container">
+            @RenderBody()
+        </div>
+    </main>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+
     @RenderSection("scripts", required: false)
 </body>
 </html>

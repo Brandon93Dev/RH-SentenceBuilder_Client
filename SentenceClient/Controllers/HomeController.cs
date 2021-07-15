@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using SentenceClient.Models;
 
 namespace SentenceClient.Controllers
 {
@@ -10,21 +12,11 @@ namespace SentenceClient.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            ViewBag.RenderIntro = true;
+            Service svc = new Service();
+            WordList wl = svc.GetAllWordLists();
+            return View("Index",wl);
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }
